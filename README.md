@@ -1,4 +1,3 @@
-# Easy-Dev-Env-Setup
 # Setting Up a Basic Dev Environment on a Windows\Liunux Machine
 ---
 
@@ -110,7 +109,7 @@ sudo apt-get install wget ca-certificates curl
 
 Manage your Node.js versions efficiently with NVM:
 
-```bash
+```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 ```
 
@@ -155,13 +154,13 @@ Git is essential for **version control**. Install and configure Git with the fol
 
 ### 🛠️ **Install Git:**
 
-```bash
+```
 sudo apt-get install git
 ```
 
 ### 🧑‍💻 **Configure Git Identity:**
 
-```bash
+```
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
@@ -186,9 +185,8 @@ sudo apt install gh
 
 ### 💡 **Setting Up GCM in WSL:**
 
-1. Install **Git for Windows** for optimal compatibility and select **GCM** during installation.
-2. Alternatively, set up GCM within WSL:
-   ```bash
+Set up GCM within WSL:
+   ```
    git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
    ```
 
@@ -196,7 +194,7 @@ sudo apt install gh
 
 ## 🔒 Configure Security Settings
 
-### 🔧 **Steps to Secure Your System:**
+### 🔧 **Steps to Secure Your System:** ### (Optional)
 
 1. **Windows Security:** Ensure **Windows Defender** or your preferred antivirus is active and updated.
 2. **Firewall Settings:** Configure your **Windows Firewall** to allow development tools while blocking unauthorized access.
