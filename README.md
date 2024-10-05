@@ -1,4 +1,4 @@
-# Setting Up a Basic Dev Environment on a Windows\Linux Machine
+# Setting Up a Basic Dev Environment on a Windows\Liunux Machine
 ---
 
 # 🚀 Set Up Your Dev Environment
