@@ -1,4 +1,5 @@
-# Setting Up a Basic Dev Environment on a Windows\Liunux Machine
+# Setting Up a Basic Dev Environment on a Windows/Linux Machine
+
 ---
 
 # 🚀 Set Up Your Dev Environment
@@ -13,6 +14,8 @@ Welcome to your step-by-step guide for setting up a **powerful development envir
 2. [🔧 Configure VSCode for Development](#configure-vscode-for-development)
 3. [🐧 WSL - Setting Up Ubuntu and Updating Linux Kernel](#wsl---setting-up-ubuntu-and-updating-linux-kernel)
 4. [🛠️ Essential Dev Tools](#essential-dev-tools)
+   - [Node Version Manager (NVM)](#node-version-manager-nvm)
+   - [AWS CLI v2](#aws-cli-v2)
 5. [🐍 Python and pip](#python-and-pip)
 6. [⚡ Git - Installation and Configuration](#git---installation-and-configuration)
 7. [🔑 Git Credential Manager (GCM)](#git-credential-manager-gcm)
@@ -34,7 +37,7 @@ VSCode is a **crucial tool** for development. Let's get it installed and ready!
   
 ### 🚀 **Install VSCode Using PowerShell CLI:**
 
-```
+```powershell
 $InstallerUrl = "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user"
 $InstallerPath = "$env:TEMP\VSCodeInstaller.exe"
 Invoke-WebRequest -Uri $InstallerUrl -OutFile $InstallerPath
@@ -73,7 +76,7 @@ sudo apt install code
 
 ---
 
-## 🐧 WSL - Setting Up Ubuntu
+## 🐧 WSL - Setting Up Ubuntu and Updating Linux Kernel
 
 Build a **robust foundation** by setting up **WSL** and **Ubuntu** on your Windows machine.
 
@@ -95,13 +98,14 @@ Build a **robust foundation** by setting up **WSL** and **Ubuntu** on your Windo
      ```bash
      sudo apt update && sudo apt upgrade -y
      ```
+
 ---
 
 ## 🛠️ Essential Dev Tools
 
 To build high-quality software, install these **essential tools**:
 
-```
+```bash
 sudo apt-get install wget ca-certificates curl
 ```
 
@@ -109,9 +113,37 @@ sudo apt-get install wget ca-certificates curl
 
 Manage your Node.js versions efficiently with NVM:
 
-```
+```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 ```
+
+### 🚀 **AWS CLI v2**:
+
+The AWS Command Line Interface (CLI) v2 is essential for interacting with AWS services directly from the command line. Install it with the following steps:
+
+#### **Installation:**
+
+For Linux:
+
+```bash
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+```
+
+For Windows (via PowerShell):
+
+```powershell
+msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
+```
+
+#### **Verify the installation:**
+
+```bash
+aws --version
+```
+
+This should return the installed version of AWS CLI v2.
 
 ---
 
@@ -119,7 +151,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 
 Python is an essential tool for cloud development. Install **Python** and **pip** with:
 
-```
+```bash
 sudo apt install python3-pip -y
 ```
 
@@ -127,21 +159,24 @@ sudo apt install python3-pip -y
 
 Ensure quality in your CloudFormation templates:
 
-```
+```bash
 pip3 install cfn-lint
 ```
 
 > Don't forget to install the **CloudFormation Linter** extension in VSCode!
 
 ### 🔧 jq (Command-line JSON processor):
+
 jq is a lightweight command-line JSON processor, essential for parsing and manipulating JSON data:
 
-```
+```bash
 sudo apt-get install jq
 ```
+
 ---
 
 ## 💽 Install Database Tools (if needed)
+
 If your development requires a database, install the appropriate database. For example, for MySQL:
 1.	Download MySQL: Go to the MySQL Downloads page and select the Windows version.
 2.	Install MySQL: Follow the setup wizard, set up your root password, and configure the server.
@@ -154,26 +189,26 @@ Git is essential for **version control**. Install and configure Git with the fol
 
 ### 🛠️ **Install Git:**
 
-```
+```bash
 sudo apt-get install git
 ```
 
 ### 🧑‍💻 **Configure Git Identity:**
 
-```
+```bash
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 ```
 
 ### 🔍 **View Git Configuration:**
 
-```
+```bash
 git config --list
 ```
 
-### Install Git CLI
+### Install Git CLI:
 
-```
+```bash
 sudo apt install gh
 ```
 
@@ -186,9 +221,10 @@ sudo apt install gh
 ### 💡 **Setting Up GCM in WSL:**
 
 Set up GCM within WSL:
-   ```
-   git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
-   ```
+
+```bash
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager.exe"
+```
 
 ---
 
