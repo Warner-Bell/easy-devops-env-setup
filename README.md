@@ -10,17 +10,17 @@ Welcome to your step-by-step guide for setting up a **powerful development envir
 
 ## 📑 **Table of Contents**
 
-1. [💻 IDE - Install Visual Studio Code (VSCode)](#ide---install-visual-studio-code-vscode)
-2. [🔧 Configure VSCode for Development](#configure-vscode-for-development)
-3. [🐧 WSL - Setting Up Ubuntu and Updating Linux Kernel](#wsl---setting-up-ubuntu-and-updating-linux-kernel)
-4. [🛠️ Essential Dev Tools](#essential-dev-tools)
-   - [Node Version Manager (NVM)](#node-version-manager-nvm)
-   - [AWS CLI v2](#aws-cli-v2)
-5. [🐍 Python and pip](#python-and-pip)
-6. [⚡ Git - Installation and Configuration](#git---installation-and-configuration)
-7. [🔑 Git Credential Manager (GCM)](#git-credential-manager-gcm)
-8. [🔒 Configure Security Settings](#configure-security-settings)
-9. [🎉 Final Congratulations](#final-congratulations)
+1. [💻 IDE - Install Visual Studio Code (VSCode)](#-ide---install-visual-studio-code-vscode)
+2. [🔧 Configure VSCode for Development](#-configure-vscode-for-development)
+3. [🐧 WSL - Setting Up Ubuntu and Updating Linux Kernel](#-wsl---setting-up-ubuntu-and-updating-linux-kernel)
+4. [🛠️ Essential Dev Tools](#-essential-dev-tools)
+   - [Node Version Manager (NVM)](#-node-version-manager-nvm)
+   - [AWS CLI v2](#-aws-cli-v2)
+5. [🐍 Python and pip](#-python-and-pip)
+6. [⚡ Git - Installation and Configuration](#-git---installation-and-configuration)
+7. [🔑 Git Credential Manager (GCM)](#-git-credential-manager-gcm)
+8. [🔒 Configure Security Settings](#-configure-security-settings)
+9. [🎉 Final Congratulations](#-final-congratulations)
 
 ---
 
@@ -244,4 +244,3 @@ git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git
 You now have a **fully configured, secure development environment** on your Windows machine using **WSL**, **VSCode**, **Git**, and other standard development tools. You're ready for cloud development and ensuring your **CloudFormation templates** are linted before merging into the main branch.
 
 **Happy Coding!** 💻🌐
-
