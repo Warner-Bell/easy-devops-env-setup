@@ -243,4 +243,18 @@ git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git
 
 You now have a **fully configured, secure development environment** on your Windows machine using **WSL**, **VSCode**, **Git**, and other standard development tools. You're ready for cloud development and ensuring your **CloudFormation templates** are linted before merging into the main branch.
 
+## 📬 Contact
+
+Warner Bell - [Tap In!](https://dot.cards/warnerbell)
+
+
+## 💚 Enjoyed this project? Help keep them coming!
+
+If you'd like to support future projects, consider contributing:
+
+[![Cash App](https://img.shields.io/badge/Cash_App-$dedprez20-00C244?style=flat&logo=cash-app)](https://cash.app/$dedprez20)
+
+Thanks a ton for your generosity!  
+Your Super Cool Cloud Builder - **Warner Bell**
+
 **Happy Coding!** 💻🌐
